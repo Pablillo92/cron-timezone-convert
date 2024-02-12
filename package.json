@@ -1,0 +1,63 @@
+{
+  "name": "crontzconvert",
+  "version": "1.0.0",
+  "description": "Convert cron expressions for others timezones",
+  "main": "./dist/crontzconvert.umd.js",
+  "module": "./dist/crontzconvert.mjs",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src",
+    "start": "vite build",
+    "release": "release-it --dry-run",
+    "release:ci": "release-it --ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pablillo92/cron-timezone-convert.git"
+  },
+  "homepage": "https://github.com/Pablillo92/cron-timezone-convert",
+  "keywords": [
+    "cron",
+    "cronjob",
+    "crontab",
+    "schedule",
+    "parser",
+    "cron expression",
+    "cron description",
+    "timezone"
+  ],
+  "author": "Pablo Saez Guerrero",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.4.2",
+    "eslint-plugin-prettier": "^5.0.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "release-it": "^17.0.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11"
+  },
+  "dependencies": {
+    "cron-parser": "^4.9.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43"
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  }
+}
